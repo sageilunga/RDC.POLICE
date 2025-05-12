@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail Sécurité - Police Nationale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="logo-police.png" alt="Logo Police Nationale" class="logo">
+            <h1>Portail Sécurité Police Nationale</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#alertes"><i class="fas fa-bell"></i> Alertes</a></li>
+                <li><a href="#recherche"><i class="fas fa-search"></i> Recherche</a></li>
+                <li><a href="#procedures"><i class="fas fa-file-alt"></i> Procédures</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+                <li class="login"><a href="#login"><i class="fas fa-user-shield"></i> Accès sécurisé</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h2>Plateforme de Sécurité et d'Intervention</h2>
+                <p>Accès réservé au personnel autorisé de la Police Nationale</p>
+                <button class="btn-alerte"><i class="fas fa-exclamation-triangle"></i> Alerte Urgence</button>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2><i class="fas fa-shield-alt"></i> Services Disponibles</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Base de Données</h3>
+                    <p>Accès aux fichiers nationaux</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Cartographie</h3>
+                    <p>Visualisation des interventions</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Vidéosurveillance</h3>
+                    <p>Accès aux caméras sécurisées</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Rapports</h3>
+                    <p>Gestion des procédures</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Ressources Humaines</h3>
+                    <p>Gestion des effectifs</p>        
+                    
+        </section>
+
+        <section id="alerte" class="alerte-rapide">
+            <h2><i class="fas fa-bullhorn"></i> Alerte Rapide</h2>
+            <form>
+                <select required>
+                    <option value="">Type d'alerte</option>
+                    <option value="intervention">Demande d'intervention</option>
+                    <option value="recherche">Avis de recherche</option>
+                    <option value="danger">Danger imminent</option>
+                </select>
+                <textarea placeholder="Détails de l'alerte..." required></textarea>
+                <button type="submit" class="btn-envoyer">Envoyer Alerte</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacts Urgence</h3>
+                <p><i class="fas fa-phone"></i> 17 - Police Secours</p>
+                <p><i class="fas fa-phone"></i> 112 - Urgence Européenne</p>
+            </div>
+            <div class="footer-section">
+                <h3>Accès Rapide</h3>
+                <ul>
+                    <li><a href="#confidentialite">Politique de confidentialité</a></li>
+                    <li><a href="#mentions">Mentions légales</a></li>
+                    <li><a href="#aide">Aide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sécurité</h3>
+                <p><i class="fas fa-lock"></i> Session sécurisée</p>
+                <p id="derniere-connexion">Dernière connexion: --/--/---- --:--</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Police Nationale - Tous droits réservés</p>
+            <p class="version">Version 2.4.1</p>
+        </div>
+    </footer>
+</body>
+</html>

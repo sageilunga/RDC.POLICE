@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sécurité Entreprise | Protection des Données</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portail de sécurité pour les employés de l'entreprise">
+</head>
+<body>
+    <!-- Barre de navigation sécurisée -->
+    <header class="security-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>SecureCorp</span>
+            </div>
+            <nav class="security-nav">
+                <ul>
+                    <li><a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Tableau de bord</a></li>
+                    <li><a href="#alerts"><i class="fas fa-bell"></i> Alertes</a></li>
+                    <li><a href="#policies"><i class="fas fa-file-contract"></i> Politiques</a></li>
+                    <li><a href="#training"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+                    <li><a href="#reports"><i class="fas fa-chart-bar"></i> Rapports</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <div class="user-badge">
+                    <i class="fas fa-user-circle"></i>
+                    <span>J. Dupont</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="mfa-indicator" title="Authentification à deux facteurs active">
+                    <i class="fas fa-lock"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bannière d'avertissement de sécurité -->
+    <div class="security-banner">
+        <div class="container">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>Niveau de sécurité actuel : Élevé. Toutes les protections sont actives.</span>
+            <button class="btn btn-small">Détails</button>
+        </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <main class="security-main">
+        <div class="container">
+            <!-- Section de bienvenue -->
+            <section class="welcome-section">
+                <h1><i class="fas fa-shield-virus"></i> Portail de Sécurité</h1>
+                <p class="subtitle">Bienvenue sur le portail de sécurité de votre entreprise. Consultez les alertes, politiques et formations.</p>
+                
+                <div class="security-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon safe">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Systèmes sécurisés</h3>
+                            <span class="stat-value">98%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Alertes ce mois</h3>
+                            <span class="stat-value">12</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon danger">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Menaces bloquées</h3>
+                            <span class="stat-value">247</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon primary">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Employés formés</h3>
+                            <span class="stat-value">83%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alertes en cours -->
+            <section class="alerts-section">
+                <h2><i class="fas fa-bell"></i> Alertes Récentes</h2>
+                
+                <div class="alert-grid">
+                    <div class="alert-card critical">
+                        <div class="alert-header">
+                            <h3>Tentative de phishing détectée</h3>
+                            <span class="alert-time">Il y a 15 min</span>
+                        </div>
+                        <p>Plusieurs employés ont reçu un email suspect demandant des identifiants.</p>
+                        <div class="alert-actions">
+                            <button class="btn btn-small btn-outline">Marquer comme lu</button>
+                            <button class="btn btn-small">Voir détails</button>
+                        </div>
+                    </div>
+                    
+                    <div class="alert-card warning">
+                        <div class="alert-header">
+                            <h3>Mise à jour de sécurité requise</h3>
+                            <span class="alert-time">Il y a 2 heures</span>
+                        </div>
+                        <p>15 postes nécessitent une mise à jour urgente du système d'exploitation.</p>
+                        <div class="alert-actions">
+                            <button class="btn btn-small btn-outline">Marquer comme lu</button>
+                            <button class="btn btn-small">Voir détails</button>
+                        </div>
+                    </div>
+                    
+                    <div class="alert-card info">
+                        <div class="alert-header">
+                            <h3>Nouvelle politique publiée</h3>
+                            <span class="alert-time">Aujourd'hui</span>
+                        </div>
+                        <p>Mise à jour de la politique de mot de passe - maintenant 12 caractères minimum.</p>
+                        <div class="alert-actions">
+                            <button class="btn btn-small btn-outline">Marquer comme lu</button>
+                            <button class="btn btn-small">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actions rapides -->
+            <section class="quick-actions">
+                <h2><i class="fas fa-bolt"></i> Actions Rapides</h2>
+                
+                <div class="actions-grid">
+                    <a href="#report" class="action-card">
+                        <i class="fas fa-flag"></i>
+                        <span>Signaler un incident</span>
+                    </a>
+                    
+                    <a href="#password" class="action-card">
+                        <i class="fas fa-key"></i>
+                        <span>Changer mon mot de passe</span>
+                    </a>
+                    
+                    <a href="#training" class="action-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Formation sécurité</span>
+                    </a>
+                    
+                    <a href="#devices" class="action-card">
+                        <i class="fas fa-laptop"></i>
+                        <span>Appareils enregistrés</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Politiques de sécurité -->
+            <section class="policies-section">
+                <h2><i class="fas fa-file-shield"></i> Politiques de Sécurité</h2>
+                
+                <div class="policies-list">
+                    <div class="policy-card">
+                        <div class="policy-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="policy-content">
+                            <h3>Politique de mot de passe</h3>
+                            <p>Exigences minimales pour la création et la gestion des mots de passe.</p>
+                            <div class="policy-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Mise à jour: 15/06/2023</span>
+                                <span><i class="fas fa-file-pdf"></i> PDF</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-small">Consulter</button>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="policy-content">
+                            <h3>Utilisation du réseau</h3>
+                            <p>Règles d'utilisation du réseau d'entreprise et des appareils personnels.</p>
+                            <div class="policy-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Mise à jour: 01/05/2023</span>
+                                <span><i class="fas fa-file-pdf"></i> PDF</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-small">Consulter</button>
+                    </div>
+                    
+                    <div class="policy-card">
+                        <div class="policy-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="policy-content">
+                            <h3>Protection des données</h3>
+                            <p>Procédures pour le traitement et le stockage des données sensibles.</p>
+                            <div class="policy-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Mise à jour: 22/04/2023</span>
+                                <span><i class="fas fa-file-pdf"></i> PDF</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-small">Consulter</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pied de page sécurisé -->
+    <footer class="security-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sécurité</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Politiques</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Procédures</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Normes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Formations</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Guides</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Urgence</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Rapporter un problème</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <div class="security-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Site sécurisé</span>
+                    </div>
+                    <p class="security-info">
+                        <i class="fas fa-lock"></i> Connexion chiffrée (TLS 1.3)
+                    </p>
+                    <p class="security-info">
+                        <i class="fas fa-user-shield"></i> Authentification à deux facteurs requise
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 SecureCorp. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
